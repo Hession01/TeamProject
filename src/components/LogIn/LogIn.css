@@ -12,13 +12,13 @@
     position  : absolute;
     transform: translate(-50%, -50%);
     color:white;
-    background-image: url("purple-back1.jpg");
+    /* background-image: url("purple-back1.jpg"); */
     width: 400px;
 } 
 body {
     margin: 0;
-    background-image: url("purple-back1.jpg"); 
-    background-color: purple; 
+    /* background-image: url("purple-back1.jpg"); 
+    background-color: purple;  */
     height: 100%;
 
   /* Center and scale the image nicely */
@@ -46,7 +46,9 @@ body {
   }
    */
   
-  
+  .h7{
+    right: 100%;
+  }
   input {
     border-radius: 15px;
     outline: 0;
@@ -64,7 +66,7 @@ body {
     border: none;
     font-family: sans-serif;
     box-shadow: 0px 0px 31px -9px rgba(204, 204, 204, 1);
-    color: grey;
+    
   }
   
   h1{

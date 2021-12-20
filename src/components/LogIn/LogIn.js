@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {auth} from "../../config";
-import {createUserWithEmailAndPassword, signInWithEmailAndPassword,
-    onAuthStateChanged,
-    signOut,} from "firebase/auth";
+import {createUserWithEmailAndPassword, signInWithEmailAndPassword,onAuthStateChanged,} from "firebase/auth";
 
 import "./LogIn.css";
 
@@ -40,13 +38,15 @@ const register = async () => {
             console.log(error.message);
           }
         
-    }; 
+    }
     
     
 
     return (
 
 <body>
+<h7> User Logged In: </h7>
+      {user?.email}
         <div className="LoginIn">
             <h1>Login / Signup</h1>
             <div >
@@ -68,8 +68,9 @@ const register = async () => {
                     />
                     </h3>
                 <h3><button onClick={register} class="button1">Sign Up</button></h3>
-                <h3> <Link to="/diet-form"><button onClick={login} class="button2">Login</button></Link></h3>
+                <h3>  <Link to="/diet-form">     <button onClick={login} class="button2">Login</button></Link></h3>
             </div>
+            
         </div>
         </body>
     
